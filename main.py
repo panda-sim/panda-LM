@@ -52,7 +52,7 @@ panda = Panda(basePosition=config.baseStartPosition,
 
 
 # let the scene initialize
-for i in range (2000):
+for i in range (100):
     p.stepSimulation()
     time.sleep(config.control_dt)
 

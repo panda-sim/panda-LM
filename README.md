@@ -41,6 +41,6 @@ python3 main.py
 ## Expected Output
 
 The robot should stack the two blocks on top of each other.
-Here is one example of a successful task:
+Here is one example of a successful task based on the code in `example-conversation.txt`:
 
 <img src="env.gif" width="750">
