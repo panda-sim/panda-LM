@@ -10,20 +10,20 @@ from objects import objects
 
 # functions that the language model (LM) can use
 def move_to_pose(ee_position, ee_rotz):
-    panda.move_to_pose(ee_position=ee_position, ee_rotz=ee_rotz, positionGain=0.01)
     for i in range (800):
+        panda.move_to_pose(ee_position=ee_position, ee_rotz=ee_rotz, positionGain=0.01)
         p.stepSimulation()
         time.sleep(config.control_dt)
 
 def close_gripper():
-    panda.close_gripper()
     for i in range (300):
+        panda.close_gripper()
         p.stepSimulation()
         time.sleep(config.control_dt)
 
 def open_gripper():
-    panda.open_gripper()
     for i in range (300):
+        panda.open_gripper()
         p.stepSimulation()
         time.sleep(config.control_dt)
 
